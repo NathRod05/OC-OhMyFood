@@ -20,13 +20,9 @@
 
 <body>
     <div class="maint-container">
-        <header>
-            <img src="assets/logo/ohmyfood.png" alt="logo ohmyfood">
-            <label for="barre-de-localisation">
-                <i class="fa-solid fa-location-dot"></i>
-                <input class="recherche" id="barre-de-localisation" type="text" name="Recherche"
-                    placeholder="Paris, Belleville">
-            </label>
+        <header class="header">
+            <img class="header__logo" src="assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <p class="header__location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
         </header>
         <main>
             <section>
@@ -43,8 +39,28 @@
                 3
                 <button> <i class="fa-solid fa-store"></i> Dégustez au restaurant</button>
             </section>
-            <section>
+            <section class="restaurant">
                 <h1>Restaurants</h1>
+                <article class="card-restaurant">
+                    <a href="#">
+                        <img class="card-restaurant-image"
+                            src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat dressé élégamment 
+                        entourée de verre à vin et de pain dans un restaurant">
+                        <p>Nouveau</p>
+                        <h2>La paletteu goût</h2>
+                    </a>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                </article>
+                <article class="card-restaurant">
+                    <a href="#">
+                        <img class="card-restaurant-image"
+                            src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat dressé élégamment 
+                        entourée de verre à vin et de pain dans un restaurant">
+                        <p>Nouveau</p>
+                        <h2>La paletteu goût</h2>
+                    </a>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                </article>
             </section>
         </main>
     </div>

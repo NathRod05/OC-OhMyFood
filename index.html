@@ -8,36 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/956c80195c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="maint-container">
+    <div class="main-container">
         <header class="header">
             <img class="header__logo" src="assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             <p class="header__location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
         </header>
         <main>
-            <section>
+            <section class="intro">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button> Explorer nos restaurants</button>
+                <a href="#" class="intro__link"> Explorer nos restaurants</a>
             </section>
-            <section>
+            <section class="function">
                 <h1>Fonctionnement</h1>
-                1
-                <button> <i class="fa-solid fa-mobile"></i> Choisissez un restaurant</button>
-                2
-                <button> <i class="fa-solid fa-list"></i> Composez votre menu</button>
-                3
-                <button> <i class="fa-solid fa-store"></i> Dégustez au restaurant</button>
+                <div class="function-btn">
+                    1
+                    <button class="btn"> <i class="fa-solid fa-mobile"></i> Choisissez un restaurant</button>
+                </div>
+                <div class="function-btn">
+                    2
+                    <button class="btn"> <i class="fa-solid fa-list"></i> Composez votre menu</button>
+                </div>
+                <div class="function-btn">
+                    3
+                    <button class="btn"> <i class="fa-solid fa-store"></i> Dégustez au restaurant</button>
+                </div>
             </section>
             <section class="restaurant">
                 <h1>Restaurants</h1>
@@ -45,19 +46,37 @@
                     <a href="#">
                         <img class="card-restaurant-image"
                             src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat dressé élégamment 
-                        entourée de verre à vin et de pain dans un restaurant">
-                        <p>Nouveau</p>
+                        entourée de verre à vin et de pain">
                         <h2>La paletteu goût</h2>
+                        Ménilmontant
+                    </a>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                </article>
+                <article class="card-restaurant">
+                    <a href="#">
+                        <img class="card-restaurant-image" src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="Photo d'une assiette vue du dessus">
+                        <h2>La note enchantée</h2>
+                        Charonne
+                    </a>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                </article>
+                <article class="card-restaurant">
+                    <a href="#">
+                        <img class="card-restaurant-image" src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="Photo d'un plat compose de mozzarelle épignard sur un morceau de pain">
+                        <h2>À la française</h2>
+                        Cité Rouge
                     </a>
                     <button><i class="fa-regular fa-heart"></i></button>
                 </article>
                 <article class="card-restaurant">
                     <a href="#">
                         <img class="card-restaurant-image"
-                            src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat dressé élégamment 
-                        entourée de verre à vin et de pain dans un restaurant">
-                        <p>Nouveau</p>
-                        <h2>La paletteu goût</h2>
+                            src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Photo de plusieur palt dont en premier plan un poisson">
+                        <h2>Le délice des sens</h2>
+                        Folie-Méricourt
                     </a>
                     <button><i class="fa-regular fa-heart"></i></button>
                 </article>

@@ -74,9 +74,9 @@
 
 .function-btn {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 .function-btn p {
   background-color: #9356DC;

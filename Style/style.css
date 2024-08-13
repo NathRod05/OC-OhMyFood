@@ -165,7 +165,6 @@
 /* Footer*/
 footer {
   background-color: #353535;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 25px 22px;
@@ -189,6 +188,7 @@ footer .fa-solid {
   font-family: "Shrikhand", sans-serif;
   font-size: 18px;
   padding-bottom: 16px;
+  color: #ffffff;
 }
 
 .footer-montient {

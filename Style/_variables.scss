@@ -4,3 +4,4 @@ $secondary-color: #9356DC;
 $tertiary-color: #FF79DA;
 $quaternary-color: #99E2D0;
 $new-color: #008766;
+$link-color: var(--Button-Gradient, linear-gradient(360deg, $secondary-color -11%, $tertiary-color 123%));

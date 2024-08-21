@@ -1,6 +1,8 @@
 .header-menu {
     display: flex;
     align-items: center;
+    padding: 0px 17px 0px 17px;
+
 }
 
 .picture img {
@@ -16,7 +18,12 @@
     position: relative;
     top: -50px;
     @include display-column;
+    align-items: center;
     gap: 40px;
+
+    .intro__link {
+        width: 186px;
+    }
 }
 
 .menu-title {
@@ -32,10 +39,50 @@
 .card-menu__selection {
     @include display-column;
     gap: 12px;
+    width: 100%;
+
+    .card-menu__title {
+        font-weight: 300;
+        font-size: 22px;
+        border-bottom: solid 3px $quaternary-color;
+        padding-bottom: 9px;
+        width: 40px;
+    }
 
     div {
         background-color: $main-color;
         padding: 15px;
         border-radius: 15px;
+
+        h3 {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .card-menu__subtitle {
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            padding-top: 5px;
+            justify-content: space-between;
+            font-weight: 300;
+            font-size: 15px;
+
+            p {
+                font-weight: bold;
+            }
+        }
     }
+
+}
+
+.btn-order {
+    border: none;
+    border-radius: 25px;
+    color: $main-color;
+    background: $link-color;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 186px;
+    height: 50px;
 }

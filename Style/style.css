@@ -29,10 +29,15 @@
 .menu-title {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 .menu-title h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
+  font-weight: 400;
+}
+.menu-title i {
+  font-size: 25px;
 }
 
 .card-menu__selection {
@@ -79,6 +84,22 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 186px;
   height: 50px;
+  position: relative;
+  z-index: 1;
+}
+.btn-order:hover .btn-order__opacity {
+  opacity: 1;
+}
+.btn-order.__opacity {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: darken var(--Button-Gradient, linear-gradient(360deg, #9356DC -11%, #FF79DA 123%)), 5;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 /* General */
@@ -222,6 +243,7 @@
   height: 251px;
   background-color: #ffffff;
   border-radius: 15px;
+  position: relative;
 }
 .card-restaurant .new {
   background-color: #99E2D0;
@@ -232,7 +254,9 @@
   justify-content: center;
   color: #008766;
   position: absolute;
-  right: 26px;
+  right: 15px;
+  top: 15px;
+  border-radius: 2px;
 }
 .card-restaurant .card-restaurant-image {
   width: 100%;
@@ -252,9 +276,10 @@
   padding-top: 5px;
 }
 
-.fa-regular {
+.card-heart {
   position: absolute;
   right: 30px;
+  bottom: 30px;
   font-size: 25px;
 }
 

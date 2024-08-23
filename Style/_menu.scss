@@ -3,6 +3,9 @@
     align-items: center;
     padding: 0px 17px 0px 17px;
 
+    i {
+        color: #000000;
+    }
 }
 
 .picture img {
@@ -31,7 +34,6 @@
     align-items: center;
     gap: 24px;
 
-
     h1 {
         font-family: "Shrikhand", sans-serif;
         font-size: 28px;
@@ -40,6 +42,7 @@
 
     i {
         font-size: 25px;
+
     }
 }
 

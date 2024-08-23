@@ -3,6 +3,9 @@
   align-items: center;
   padding: 0px 17px 0px 17px;
 }
+.header-menu i {
+  color: #000000;
+}
 
 .picture img {
   width: 100%;
@@ -281,6 +284,15 @@
   right: 30px;
   bottom: 30px;
   font-size: 25px;
+}
+
+.card-heart-active {
+  color: linear-gradient(360deg, #9356DC -11%, #FF79DA 123%);
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 25px;
+  z-index: -1;
 }
 
 .card-restaurant a {

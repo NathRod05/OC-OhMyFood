@@ -287,20 +287,30 @@
   padding-top: 5px;
 }
 
-.card-heart {
+.card-heart .fa-heart {
   position: absolute;
   right: 30px;
   bottom: 30px;
   font-size: 25px;
+  transition: opacity 1s linear;
+}
+.card-heart .empty-heart {
+  background-color: white;
+  z-index: 1;
+}
+.card-heart .full-heart {
+  background-image: linear-gradient(360deg, #9356DC -11%, #FF79DA 123%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
-.card-heart-active {
-  color: linear-gradient(360deg, #9356DC -11%, #FF79DA 123%);
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  font-size: 25px;
-  z-index: -1;
+.heart-checkbox:checked + .empty-heart {
+  opacity: 0;
+}
+
+.heart-checkbox {
+  display: none;
 }
 
 .card-restaurant a {

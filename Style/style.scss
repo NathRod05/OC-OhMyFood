@@ -195,20 +195,42 @@
 }
 
 .card-heart {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    font-size: 25px;
+
+    .fa-heart {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        font-size: 25px;
+        transition: opacity 1s linear;
+
+    }
+
+    .empty-heart {
+        background-color: white;
+        z-index: 1;
+
+    }
+
+    .full-heart {
+        background-image: linear-gradient(360deg, $secondary-color -11%, $tertiary-color 123%);
+        background-clip: text;
+        color: transparent;
+    }
 }
 
-.card-heart-active {
-    color: linear-gradient(360deg, $secondary-color -11%, $tertiary-color 123%);
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    font-size: 25px;
-    z-index: -1;
+.heart-checkbox:checked+.empty-heart {
+    opacity: 0;
 }
+
+
+.heart-checkbox {
+    display: none;
+}
+
+
+
+
+
 
 .card-restaurant a {
     text-decoration: none;

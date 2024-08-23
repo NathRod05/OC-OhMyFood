@@ -149,7 +149,6 @@
 .restaurant {
     background-color: $primary-color;
     @include display-column;
-    gap: 18px;
     padding: 54px 18px 66px 18px;
 }
 
@@ -159,7 +158,7 @@
     background-color: $main-color;
     border-radius: 15px;
     position: relative;
-
+    margin-top: 18px;
 
     .new {
         background-color: $quaternary-color;

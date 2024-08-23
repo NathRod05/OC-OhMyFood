@@ -97,6 +97,7 @@
     height: 50px;
     position: relative;
     z-index: 1;
+    margin-bottom: 40px;
 
     &:hover {
         & .btn-order__opacity {
@@ -114,5 +115,13 @@
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-menu {
+        margin-left: 193px;
+        margin-right: 193px;
+        padding: 0px 210px 0px 210px;
     }
 }

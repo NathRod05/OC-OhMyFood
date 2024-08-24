@@ -12,8 +12,13 @@
 
 /* Header */
 .header {
-    @include display-center;
-    @include display-column;
+
+    div {
+        @include display-center;
+        @include display-column;
+        width: 100%;
+        box-shadow: 0px 42px 4px 0px rgba(0, 0, 0, 0.15);
+    }
 
 }
 
@@ -57,34 +62,21 @@
 
 }
 
-.intro__link {
+.fake-btn {
+    text-decoration: none;
     margin-top: 27px;
     border-radius: 25px;
-    padding: 13px 19px;
-    text-decoration: none;
     color: $main-color;
-    background: $link-color;
-    font-weight: 500;
+    background: $btn-color;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    position: relative;
-    z-index: 1;
 
-    &:hover {
-        & .intro__link--opacity {
-            opacity: 1;
-        }
+    p {
+        font-weight: 500;
+        padding: 13px 19px;
     }
 
-    &.--opacity {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: darken ($link-color, 5);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
+    &:hover {
+        opacity: 0.8;
     }
 }
 
@@ -107,10 +99,10 @@
 
 .function-btn {
     @include display-center;
-    justify-content: center;
     flex-direction: row;
 
     p {
+        color: #ffffff;
         background-color: $secondary-color;
         border-radius: 25px;
         width: 24px;
@@ -121,12 +113,19 @@
         left: 11px;
     }
 
+    :hover>.fa-solid {
+        color: $secondary-color;
+    }
+
 }
 
 .btn {
+    display: flex;
+    @include display-center;
+    padding-left: 32px;
     border: none;
     border-radius: 20px;
-    width: 322px;
+    width: 100%;
     height: 72px;
     font-size: 16px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -136,20 +135,21 @@
     .fa-solid {
         color: #7E7E7E;
         padding-right: 27px;
-
-
-        &:hover {
-            color: $secondary-color;
-
-        }
+        font-size: 20px;
     }
+
+
 }
 
 /*Restaurant*/
 .restaurant {
     background-color: $primary-color;
     @include display-column;
-    padding: 54px 18px 66px 18px;
+    padding: 54px 18px 48px 18px;
+
+    h1 {
+        margin-bottom: 18px;
+    }
 }
 
 .card-restaurant {
@@ -158,7 +158,9 @@
     background-color: $main-color;
     border-radius: 15px;
     position: relative;
-    margin-top: 18px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 18px;
+
 
     .new {
         background-color: $quaternary-color;
@@ -201,7 +203,7 @@
         right: 30px;
         bottom: 30px;
         font-size: 25px;
-        transition: opacity 1s linear;
+        transition: opacity 0.4s linear;
 
     }
 
@@ -212,7 +214,7 @@
     }
 
     .full-heart {
-        background-image: linear-gradient(360deg, $secondary-color -11%, $tertiary-color 123%);
+        background-image: linear-gradient($secondary-color, $tertiary-color);
         background-clip: text;
         color: transparent;
     }
@@ -294,29 +296,34 @@ footer {
     }
 
     .function {
-        padding: 50px 180px 25px 180px;
+        padding: 50px;
     }
 
     .function__desktop {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .function-btn {
+        width: 322px;
     }
 
     .restaurant {
-        padding: 30px 180px 30px 180px;
+        padding: 30px;
 
         div {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
             gap: 50px;
         }
     }
 
     .card-restaurant {
-
-        width: 490px;
+        min-width: 35%;
+        flex-grow: 1;
+        flex-basis: 0;
     }
 
     footer {

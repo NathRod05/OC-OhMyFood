@@ -20,16 +20,18 @@
 <body>
     <div class="main-container">
         <header class="header">
-            <img class="header__logo" src="assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <div>
+                <img class="header__logo" src="assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            </div>
             <p class="header__location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
         </header>
         <main>
             <section class="intro">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <a href="#" class="intro__link"> Explorer nos restaurants
-                    <div class="intro__link--opacity"></div>
-                </a>
+                <div class="fake-btn">
+                    <p> Explorer nos restaurants </p>
+                </div>
             </section>
             <section class="function">
                 <h1>Fonctionnement</h1>
@@ -75,7 +77,11 @@
                             <h2>La note enchantée</h2>
                             <p>Charonne</p>
                         </a>
-                        <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+                        <label class="card-heart">
+                            <input class="heart-checkbox" type="checkbox">
+                            <i class="fa-regular fa-heart empty-heart"></i>
+                            <i class="fa-solid fa-heart full-heart"></i>
+                        </label>
                     </article>
                     <article class="card-restaurant">
                         <a href="#">
@@ -85,7 +91,11 @@
                             <h2>À la française</h2>
                             <p> Cité Rouge</p>
                         </a>
-                        <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+                        <label class="card-heart">
+                            <input class="heart-checkbox" type="checkbox">
+                            <i class="fa-regular fa-heart empty-heart"></i>
+                            <i class="fa-solid fa-heart full-heart"></i>
+                        </label>
                     </article>
                     <article class="card-restaurant">
                         <a href="le_délice_des_sens.html">
@@ -95,7 +105,11 @@
                             <h2>Le délice des sens</h2>
                             <p>Folie-Méricourt</p>
                         </a>
-                        <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+                        <label class="card-heart">
+                            <input class="heart-checkbox" type="checkbox">
+                            <i class="fa-regular fa-heart empty-heart"></i>
+                            <i class="fa-solid fa-heart full-heart"></i>
+                        </label>
                     </article>
                 </div>
             </section>

@@ -1,11 +1,17 @@
 .header-menu {
     display: flex;
-    align-items: center;
+    justify-content: center;
     padding: 0px 17px 0px 17px;
 
     i {
-        color: #000000;
+        color: #101010;
+        position: absolute;
+        left: 17px;
+        top: 22px;
+        font-size: 20px;
     }
+
+
 }
 
 .picture img {
@@ -27,11 +33,36 @@
     .intro__link {
         width: 186px;
     }
+
 }
+
+.menu-heart {
+
+    .fa-heart {
+        position: absolute;
+        top: 40px;
+        font-size: 25px;
+        transition: opacity 0.4s linear;
+
+    }
+
+    .empty-heart {
+        background-color: $primary-color;
+        z-index: 1;
+
+    }
+
+    .full-heart {
+        background-image: linear-gradient($secondary-color, $tertiary-color);
+        background-clip: text;
+        color: transparent;
+    }
+
+}
+
 
 .menu-title {
     display: flex;
-    align-items: center;
     gap: 24px;
 
     h1 {
@@ -40,10 +71,6 @@
         font-weight: 400;
     }
 
-    i {
-        font-size: 25px;
-
-    }
 }
 
 .card-menu__selection {
@@ -90,32 +117,14 @@
     border: none;
     border-radius: 25px;
     color: $main-color;
-    background: $link-color;
+    background: $btn-color;
     font-weight: 500;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     width: 186px;
     height: 50px;
-    position: relative;
-    z-index: 1;
     margin-bottom: 40px;
 
-    &:hover {
-        & .btn-order__opacity {
-            opacity: 1;
-        }
-    }
 
-    &.__opacity {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: darken ($link-color, 5);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }
 }
 
 @media (min-width: 1024px) {

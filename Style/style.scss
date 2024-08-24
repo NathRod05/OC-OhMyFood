@@ -12,20 +12,16 @@
 
 /* Header */
 .header {
-
-    div {
-        @include display-center;
-        @include display-column;
-        width: 100%;
-        box-shadow: 0px 42px 4px 0px rgba(0, 0, 0, 0.15);
-    }
-
+    @include display-center;
+    @include display-column;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .header__logo {
-    width: 162px;
+
     padding-top: 20px;
     padding-bottom: 13px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
 
 }

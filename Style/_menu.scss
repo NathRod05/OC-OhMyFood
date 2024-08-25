@@ -125,7 +125,9 @@
     height: 50px;
     margin-bottom: 40px;
 
-
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 @media (min-width: 1024px) {

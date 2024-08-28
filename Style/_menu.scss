@@ -129,7 +129,7 @@
             }
 
             .fa-check {
-                rotate: 0deg;
+                transform: rotate(-360deg);
             }
         }
     }
@@ -155,7 +155,7 @@
         border-radius: 25px;
         padding: 4px;
         margin: 25px 19px;
-        transform: rotate(360deg);
+        transition: all 0.4s linear;
 
     }
 

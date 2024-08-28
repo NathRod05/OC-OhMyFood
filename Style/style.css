@@ -101,7 +101,7 @@
   opacity: 1;
 }
 .card-menu__selection .btn-choice:hover .fa-check {
-  rotate: 0deg;
+  transform: rotate(-360deg);
 }
 .card-menu__selection h3 {
   font-weight: 500;
@@ -121,7 +121,7 @@
   border-radius: 25px;
   padding: 4px;
   margin: 25px 19px;
-  transform: rotate(360deg);
+  transition: all 0.4s linear;
 }
 
 .card-menu__subtitle {

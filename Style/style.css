@@ -65,33 +65,81 @@
   gap: 12px;
   width: 100%;
 }
-.card-menu__selection .card-menu__title {
+.card-menu__selection .btn-choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-menu__selection .btn-choice .dish-description {
+  overflow: hidden;
+  padding: 15px;
+}
+.card-menu__selection .btn-choice .dish-description h3,
+.card-menu__selection .btn-choice .dish-description div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-menu__selection .btn-choice .dish-selectioned {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  position: relative;
+  left: 60px;
+  transition: all 0.5s linear;
+}
+.card-menu__selection .btn-choice .dish-selectioned p {
+  padding: 15px 15px 15px 0px;
+}
+.card-menu__selection .btn-choice:hover .dish-selectioned {
+  left: 0px;
+}
+.card-menu__selection .btn-choice:hover .btn-checked {
+  opacity: 1;
+}
+.card-menu__selection .btn-choice:hover .fa-check {
+  rotate: 0deg;
+}
+.card-menu__selection h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-checked {
+  width: 60px;
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0.3;
+  transition: all 0.5s linear;
+}
+.btn-checked .fa-check {
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 25px;
+  padding: 4px;
+  margin: 25px 19px;
+  transform: rotate(360deg);
+}
+
+.btn-checkbok {
+  display: none;
+}
+
+.card-menu__subtitle {
+  padding-top: 5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.card-menu__title {
   font-weight: 300;
   font-size: 22px;
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 9px;
   width: 40px;
-}
-.card-menu__selection div {
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 15px;
-}
-.card-menu__selection div h3 {
-  font-weight: 500;
-  font-size: 18px;
-}
-.card-menu__selection div .card-menu__subtitle {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  padding-top: 5px;
-  justify-content: space-between;
-  font-weight: 300;
-  font-size: 15px;
-}
-.card-menu__selection div .card-menu__subtitle p {
-  font-weight: bold;
 }
 
 .btn-order {
@@ -117,6 +165,126 @@
   }
   .menu-title h1 {
     padding-top: 32px;
+  }
+}
+/* HTML: <div class="loader"></div> */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: hideLoader 3s linear forwards;
+}
+
+.loader {
+  z-index: 3;
+  font-weight: bold;
+  font-family: "Shrikhand";
+  font-size: 40px;
+  display: inline-grid;
+  color: #ffffff;
+}
+
+.loader:before,
+.loader:after {
+  content: "Ohmyfood";
+  grid-area: 1/1;
+  -webkit-mask: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) 0 50%/2ch 100%;
+  animation: l29 3s infinite ease-out;
+}
+
+.loader:after {
+  -webkit-mask-position: 1ch 50%;
+  --s: -1;
+}
+
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes l29 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(calc(var(--s, 1) * 1turn));
+    opacity: 0;
+  }
+}
+.card-menu__selection .btn-choice {
+  animation: anim-card-box 1s;
+}
+.card-menu__selection .btn-choice--1 {
+  animation-delay: 0.1s;
+}
+.card-menu__selection .btn-choice--2 {
+  animation-delay: 0.2s;
+}
+.card-menu__selection .btn-choice--3 {
+  animation-delay: 0.3s;
+}
+.card-menu__selection .btn-choice--4 {
+  animation-delay: 0.4s;
+}
+.card-menu__selection .btn-choice--5 {
+  animation-delay: 0.5s;
+}
+.card-menu__selection .btn-choice--6 {
+  animation-delay: 0.6s;
+}
+.card-menu__selection .btn-choice--7 {
+  animation-delay: 0.7s;
+}
+.card-menu__selection .btn-choice--8 {
+  animation-delay: 0.8s;
+}
+.card-menu__selection .btn-choice--9 {
+  animation-delay: 0.9s;
+}
+.card-menu__selection .btn-choice--10 {
+  animation-delay: 1s;
+}
+
+@keyframes anim-card-box {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  20% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 /* General */
@@ -376,9 +544,11 @@ footer .fa-solid {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 24px;
   }
   .function-btn {
-    width: 322px;
+    flex-grow: 1;
+    flex-basis: 0;
   }
   .restaurant {
     padding: 30px 180px;
@@ -386,7 +556,7 @@ footer .fa-solid {
   .restaurant div {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 50px 100px;
   }
   .card-restaurant {
     min-width: 35%;

@@ -1,8 +1,8 @@
 @import "./variables";
 @import "./mixin";
 @import "./menu";
-
-
+@import "./loader.scss";
+@import "./loader-2.scss";
 /* General */
 
 * {
@@ -297,10 +297,12 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        gap: 24px;
     }
 
     .function-btn {
-        width: 322px;
+        flex-grow: 1;
+        flex-basis: 0;
     }
 
     .restaurant {
@@ -309,7 +311,7 @@ footer {
         div {
             display: flex;
             flex-wrap: wrap;
-            gap: 50px;
+            gap: 50px 100px;
         }
     }
 

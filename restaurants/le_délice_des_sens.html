@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Ohmyfood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -20,19 +20,19 @@
 <body>
     <div class="main-container">
         <header class="header-menu">
-            <a href="index.html">
+            <a href="../index.html">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <img class="header__logo" src="assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <img class="header__logo" src="../assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </header>
         <main>
             <div class="picture">
-                <img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat dressé élégamment 
-                entourée de verre à vin et de pain">
+                <img src="../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="Plusieurs plats servis sur une table dont en premier plan plat d'un poisson">
             </div>
             <div class="card-menu">
                 <div class="menu-title">
-                    <h1>À la française</h1>
+                    <h1>Le délice des sens</h1>
                     <label class="menu-heart">
                         <input class="heart-checkbox" type="checkbox">
                         <i class="fa-regular fa-heart empty-heart"></i>
@@ -41,77 +41,78 @@
                 </div>
                 <section class="card-menu__selection">
                     <h2 class="card-menu__title">Entrées</h2>
-                    <div>
-                        <h3>Tartare de poulpe acidulé</h3>
+                    <div class="btn-choice">
+                        <h3>Tartare de thon</h3>
                         <div class="card-menu__subtitle">
-                            Aux zestes d'orange
+                            Assaisonné au yuzu
                             <P>25€</P>
                         </div>
                     </div>
-                    <div>
-                        <h3>Velouté de légumes d'antan</h3>
+                    <div class="btn-choice">
+                        <h3>Bouchée de homard croustillant</h3>
                         <div class="card-menu__subtitle">
-                            Carotte, panais, topinambour
+                            Et sa farandole de petits légumes
                             <p>35€</p>
                         </div>
                     </div>
-                    <div>
-                        <h3>Soupe à l'oignon</h3>
+                    <div class="btn-choice">
+                        <h3>Velouté de cèpes</h3>
                         <div class="card-menu__subtitle">
-                            Revisitée
+                            Aux truffes
                             <p>20€</p>
                         </div>
                     </div>
                 </section>
                 <section class="card-menu__selection">
                     <h2 class="card-menu__title">Plats</h2>
-                    <div>
-                        <h3>Coquilles Saint-Jacques</h3>
+                    <div class="btn-choice">
+                        <h3>Poulet rôti aux herbes de Provence</h3>
                         <div class="card-menu__subtitle">
-                            Accompagnées d'une purée de panais
+                            Et sa crème de truffes
                             <p>40€</p>
                         </div>
                     </div>
-                    <div>
-                        <h3>Magret de canard</h3>
+                    <div class="btn-choice">
+                        <h3>Langouste rôtie</h3>
                         <div class="card-menu__subtitle">
-                            Et parmentier de pommes de terre
+                            Et ses légumes de saison
                             <p>35€</p>
                         </div>
                     </div>
-                    <div>
-                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                    <div class="btn-choice">
+                        <h3>Côte de bœuf Angus</h3>
                         <div class="card-menu__subtitle">
-                            Sur son lit de gnocchis aux légumes
+                            Et sa purée de panais
                             <p>44€</p>
                         </div>
                     </div>
                 </section>
                 <section class="card-menu__selection">
                     <h2 class="card-menu__title">Desserts</h2>
-                    <div>
-                        <h3>Pétales de violettes glacés</h3>
+                    <div class="btn-choice">
+                        <h3>Farandole de desserts</h3>
                         <div class="card-menu__subtitle">
-                            Et purée de noisettes
+                            Du chef
                             <p>18€</p>
                         </div>
                     </div>
-                    <div>
-                        <h3>Fondant au chocolat</h3>
+                    <div class="btn-choice">
+                        <h3>Crème brulée</h3>
                         <div class="card-menu__subtitle">
-                            Revisité
+                            Revisitée
                             <p>22€</p>
                         </div>
                     </div>
-                    <div>
-                        <h3>Millefeuille croustillant</h3>
+                    <div class="btn-choice">
+                        <h3>Tiramisu</h3>
                         <div class="card-menu__subtitle">
-                            Myrtilles et pâte d’amande
+                            À la noisette
                             <p>23€</p>
                         </div>
                     </div>
                 </section>
                 <button class="btn-order">Commander
+                    <div class="btn-order__opacity"></div>
                 </button>
             </div>
         </main>

@@ -1,0 +1,44 @@
+$num-bars: 10;
+$anim-dur: 1s;
+$anim-delay: $anim-dur / $num-bars;
+
+.card-menu__selection {
+
+    .btn-choice {
+        animation: anim-card-box $anim-dur;
+
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+    }
+}
+
+@keyframes anim-card-box {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+
+    20% {
+        opacity: 0.3;
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -228,37 +228,37 @@
   }
 }
 .card-menu__selection .btn-choice {
-  animation: anim-card-box 1s;
+  animation: anim-card-box 2s;
 }
 .card-menu__selection .btn-choice--1 {
-  animation-delay: 0.1s;
-}
-.card-menu__selection .btn-choice--2 {
   animation-delay: 0.2s;
 }
-.card-menu__selection .btn-choice--3 {
-  animation-delay: 0.3s;
-}
-.card-menu__selection .btn-choice--4 {
+.card-menu__selection .btn-choice--2 {
   animation-delay: 0.4s;
 }
-.card-menu__selection .btn-choice--5 {
-  animation-delay: 0.5s;
-}
-.card-menu__selection .btn-choice--6 {
+.card-menu__selection .btn-choice--3 {
   animation-delay: 0.6s;
 }
-.card-menu__selection .btn-choice--7 {
-  animation-delay: 0.7s;
-}
-.card-menu__selection .btn-choice--8 {
+.card-menu__selection .btn-choice--4 {
   animation-delay: 0.8s;
 }
+.card-menu__selection .btn-choice--5 {
+  animation-delay: 1s;
+}
+.card-menu__selection .btn-choice--6 {
+  animation-delay: 1.2s;
+}
+.card-menu__selection .btn-choice--7 {
+  animation-delay: 1.4s;
+}
+.card-menu__selection .btn-choice--8 {
+  animation-delay: 1.6s;
+}
 .card-menu__selection .btn-choice--9 {
-  animation-delay: 0.9s;
+  animation-delay: 1.8s;
 }
 .card-menu__selection .btn-choice--10 {
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes anim-card-box {

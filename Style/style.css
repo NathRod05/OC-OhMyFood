@@ -192,11 +192,13 @@
   content: "Ohmyfood";
   grid-area: 1/1;
   -webkit-mask: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) 0 50%/2ch 100%;
+          mask: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) 0 50%/2ch 100%;
   animation: l29 3s infinite ease-out;
 }
 
 .loader:after {
   -webkit-mask-position: 1ch 50%;
+          mask-position: 1ch 50%;
   --s: -1;
 }
 
@@ -228,7 +230,8 @@
   }
 }
 .card-menu__selection .btn-choice {
-  animation: anim-card-box 2s;
+  animation: anim-card-box 2s forwards;
+  opacity: 0;
 }
 .card-menu__selection .btn-choice--1 {
   animation-delay: 0.2s;
@@ -280,7 +283,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
 /* General */

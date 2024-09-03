@@ -5,7 +5,8 @@ $anim-delay: $anim-dur / $num-bars;
 .card-menu__selection {
 
     .btn-choice {
-        animation: anim-card-box $anim-dur;
+        animation: anim-card-box $anim-dur forwards;
+        opacity: 0;
 
         @for $i from 1 through $num-bars {
             &--#{$i} {
@@ -39,6 +40,6 @@ $anim-delay: $anim-dur / $num-bars;
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 }

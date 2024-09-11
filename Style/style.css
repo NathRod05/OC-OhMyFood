@@ -72,10 +72,11 @@
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
+  width: 100%;
 }
 .card-menu__selection .btn-choice .dish-description {
   overflow: hidden;
-  padding: 15px;
+  padding: 15px 1px 15px 15px;
 }
 .card-menu__selection .btn-choice .dish-description h3,
 .card-menu__selection .btn-choice .dish-description div {
@@ -92,7 +93,7 @@
   transition: all 0.5s linear;
 }
 .card-menu__selection .btn-choice .dish-selectioned p {
-  padding: 15px 15px 15px 0px;
+  padding: 15px 11px 15px 0px;
 }
 .card-menu__selection .btn-choice:hover .dish-selectioned {
   left: 0px;
@@ -109,7 +110,6 @@
 }
 
 .btn-checked {
-  width: 60px;
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 0.3;
@@ -120,14 +120,14 @@
   background-color: white;
   border-radius: 25px;
   padding: 4px;
-  margin: 25px 19px;
+  margin: 23px 16px;
   transition: all 0.4s linear;
 }
 
 .card-menu__subtitle {
-  padding-top: 11px;
+  padding-top: 5px;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .card-menu__title {

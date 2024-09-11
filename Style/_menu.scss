@@ -93,6 +93,7 @@
 
             h3,
             div {
+
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -134,7 +135,7 @@
 
     h3 {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 15px;
     }
 
 }
@@ -159,9 +160,9 @@
 }
 
 .card-menu__subtitle {
-    padding-top: 5px;
+    padding-top: 11px;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 12px;
 
 }
 

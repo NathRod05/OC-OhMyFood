@@ -105,7 +105,7 @@
 }
 .card-menu__selection h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .btn-checked {
@@ -125,9 +125,9 @@
 }
 
 .card-menu__subtitle {
-  padding-top: 5px;
+  padding-top: 11px;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .card-menu__title {
@@ -192,8 +192,8 @@
 .loader:after {
   content: "Ohmyfood";
   grid-area: 1/1;
-  -webkit-mask: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) 0 50%/2ch 100%;
-          mask: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) 0 50%/2ch 100%;
+  -webkit-mask: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) 50%/2ch;
+          mask: linear-gradient(90deg, #000 50%, rgba(0, 0, 0, 0) 0) 50%/2ch;
   animation: l29 3s infinite ease-out;
 }
 
